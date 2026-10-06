@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louvre Museum</title>
+   <style>
+
+    .gallery-header {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .gallery-header a {
+        display: block;
+    }
+
+    .gallery-header img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-page {
+        width: 100%;
+        margin: 0;
+        padding: 35px 25px;
+        background-color: white;
+        color: #222;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .gallery-intro {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .gallery-intro h1 {
+        margin: 0 0 15px;
+        font-size: 32px;
+    }
+
+    .gallery-intro p {
+        margin: 0;
+        max-width: 1000px;
+    }
+
+    .gallery-address {
+        text-align: left;
+        margin-bottom: 35px;
+    }
+
+    .gallery-address h2,
+    .gallery-highlights h2 {
+        font-size: 26px;
+        margin: 0 0 15px;
+    }
+
+    .gallery-address address {
+        font-style: normal;
+        margin-bottom: 15px;
+    }
+
+    .gallery-address p {
+        margin: 8px 0;
+    }
+
+    .gallery-address a {
+        color: #222;
+    }
+
+    .highlight-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+
+    .highlight-grid img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 800px) {
+        .highlight-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 500px) {
+        .gallery-page {
+            padding: 25px 15px;
+        }
+
+        .highlight-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .gallery-intro h1 {
+            font-size: 28px;
+        }
+    }
+   </style>
+</head>
+
+<body>
+
+    <header class="gallery-header">
+        <a href="proj1.html">
+            <img src="images/gallery-thin.png" alt="Art Gallery Viewer">
+        </a>
+    </header>
+
+    <main class="gallery-page">
+
+        <section class="gallery-intro">
+            <h1>Louvre Museum</h1>
+
+            <p>
+                The Louvre is a national art museum in Paris, France. It is
+                located on the Right Bank of the Seine in the city's 1st
+                arrondissement and home to some of the most canonical works
+                of Western art, including the Mona Lisa, Venus de Milo, and
+                Winged Victory.
+            </p>
+        </section>
+
+        <section class="gallery-address">
+            <h2>Address</h2>
+
+            <address>
+                Rue de Rivoli, 75001<br>
+                Paris, France
+            </address>
+
+            <p>
+                <a href="http://www.louvre.fr/" target="_blank">
+                    Visit Website
+                </a>
+            </p>
+
+            <p>
+                <a href="https://maps.google.com/?q=48.8611,2.33638" target="_blank">
+                    View on Google Maps
+                </a>
+            </p>
+        </section>
+
+        <section class="gallery-highlights">
+            <h2>Highlights</h2>
+
+            <div class="highlight-grid">
+                <img src="images/louvre1.jpg" alt="Louvre Museum highlight 1">
+                <img src="images/louvre2.jpg" alt="Louvre Museum highlight 2">
+                <img src="images/louvre3.jpg" alt="Louvre Museum highlight 3">
+                <img src="images/louvre4.jpg" alt="Louvre Museum highlight 4">
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
